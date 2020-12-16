@@ -1,0 +1,25 @@
+.container {
+  background: black;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    color: white;
+    opacity: 0.5;
+  }
+
+  &.active {
+    color: white;
+    opacity: 0.5;
+  }
+}
+
+.avatar {
+  cursor: pointer;
+  span {
+    color: white;
+  }
+}

@@ -2,13 +2,13 @@ import React from 'react';
 import { Button, Container, Image, Menu, Popup } from 'semantic-ui-react';
 import { Link, NavLink } from 'react-router-dom';
 
-import s from './Header.module.scss';
+import styles from './Header.module.scss';
 import Logo from '../../images/logo.png';
 import { routes } from '../routes';
 
 const Header = () => {
 	const Avatar = (
-		<div className={s.avatar}>
+		<div className={styles.avatar}>
 			<Image
 				src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW4OIMCU8ZseqnI8wPK5pIO-ECfHybXZwvpA&usqp=CAU"
 				avatar
@@ -19,8 +19,8 @@ const Header = () => {
 	);
 
 	return (
-		<Container className={s.container} fluid>
-			<Menu secondary>
+		<Container fluid>
+			<Menu inverted borderless attached>
 				<Menu.Menu position="left">
 					<Menu.Item>
 						<Image size="tiny" src={Logo} />
@@ -29,12 +29,12 @@ const Header = () => {
 
 				<Menu.Menu position="right">
 					<Menu.Item>
-						<NavLink className={s.link} activeClassName={s.active} to={routes.users}>
+						<NavLink className={styles.link} activeClassName={styles.active} to={routes.users}>
 							Users
 						</NavLink>
 					</Menu.Item>
 					<Menu.Item>
-						<NavLink className={s.link} activeClassName={s.active} to={routes.posts}>
+						<NavLink className={styles.link} activeClassName={styles.active} to={routes.posts}>
 							Posts
 						</NavLink>
 					</Menu.Item>

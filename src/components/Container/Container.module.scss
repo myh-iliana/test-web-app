@@ -1,0 +1,7 @@
+.container {
+  margin-top: var(--top);
+
+  &.maxWidth {
+    max-width: var(--max-width) !important;
+  }
+}

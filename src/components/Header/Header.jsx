@@ -19,7 +19,7 @@ const Header = () => {
 	);
 
 	return (
-		<Container fluid>
+		<Container fluid className={styles.container}>
 			<Menu inverted borderless attached>
 				<Menu.Menu position="left">
 					<Menu.Item>

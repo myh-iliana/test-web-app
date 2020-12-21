@@ -1,3 +1,3 @@
 export const auth = {
-	isLoggedIn: false,
+	isLoggedIn: true,
 };
